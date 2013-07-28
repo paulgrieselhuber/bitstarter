@@ -6,26 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,200,100" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css"> 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-    rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
     <style type="text/css">
     body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     }
-    .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
+    .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+        -webkit-box-shadow:0 1px 10px rgba(19, 88, 105, 0.4);
+        -moz-box-shadow:0 1px 10px rgba(19, 88, 105, 0.4);
+        box-shadow:0 1px 10px rgba(19, 88, 105, 0.4);
+    }
+    h1:before {
+        content:url('./coolcar-icon.png');
+    }
+    h1 {
+        color:#0F95B6;
+        font-size:3.6em;
+    }
+    h3.faq {
+        font-size:2.6em;
+    }
+    .heading, .subheading, .center {
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
+        text-align:center;
     }
     p.lead {
-        padding-top: 1.5%;
         font-size: 24px;
         line-height: 30px;
     }
     p {
         font-size: 18px;
         line-height:24px;
+    }
+    .mktg-img {
+        width: 100%;
+        height:auto;
     }
     .pitch {
         padding: 2.5% 0%;
@@ -34,24 +51,32 @@
         padding: 2% 0%;
     }
     .actions {
-        background-color: #343434;
+        background-color: #EEECEC;
         padding: 3% 0%;
     }
     .video, .thermometer, .order, .social, .statistics {
         text-align: center;
     }
     .statistics h3, .statistics p {
-        color: white;
+        color: #727272;
     }
     .copy {
         padding-top: 2.5%;
         padding-bottom: 2.5%;
         text-align: justify;
     }
+    .btn {
+        padding:10px 20px;
+        font-size:19px;
+    }
+    .progress {
+        height:26px;
+    }
     .asset {
         padding: 2.5% 0%;
     }
     .footer {
+        margin-top:2em;
         color: #cccccc;
         text-align: center;
     }
@@ -89,7 +114,7 @@
     </style>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -97,12 +122,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand" href="">Bitstarter</a>
+                <a class="brand" href="">CoolCar</a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         <li class="active"><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="">Grab a lift</a></li>
+                        <li><a href="">Find a passenger</a></li>
                     </ul>
                 </div>
             </div>
@@ -110,18 +135,18 @@
     </div>
     <div class="container">
         <div class="row-fluid heading">
-            <div class="span12">
-                <h1>Bitstarter Title</h1>
+            <div class="span11 offset1">
+                <h1>CoolCar</h1>
             </div>
         </div>
         <div class="row-fluid subheading">
-            <div class="span12">
-                <p class="lead">This is my first bitstarter project.</p>
+            <div class="span11 offset1">
+                <p class="lead">Like AirBnB, but for cars.</p>
             </div>
         </div>
         <div class="row-fluid pitch">
             <div class="span5 offset1 video">
-                <img class="img-polaroid" src="http://placehold.it/480x300">
+                <img class="mktg-img" src="./stock-photo-23179248-road-tripping.jpg">
             </div>
             <div class="span5 actions">
                 <div class="span8 offset2">
@@ -134,13 +159,13 @@
                         </div>
                         <div class="span4">
                             <div class="linediv-c">
-                                <h3>$6000</h3>
-                                <p>of $10,000</p>
+                                <h3>$60,000</h3>
+                                <p>of $150,000</p>
                             </div>
                         </div>
                         <div class="span4">
                             <div class="linediv-r">
-                                <h3>10</h3>
+                                <h3>30</h3>
                                 <p>days left</p>
                             </div>
                         </div>
@@ -148,8 +173,8 @@
                 </div>
                 <div class="span10 offset1">
                     <div class="thermometer progress active">
-                        <div class="bar bar-success" style="width:60%;"></div>
-                        <div class="bar bar-warning" style="width:40%;"></div>
+                        <div class="bar bar-success" style="width:40%;"></div>
+                        <div class="bar bar-warning" style="width:60%;"></div>
                     </div>
                 </div>
                 <div class="span6 offset3 order">
@@ -161,43 +186,65 @@
                 </div>
             </div>
         </div>
-        <div class="row-fluid section1">
-            <div class="span5 offset1 asset">
-                <img class="img-polaroid" src="http://placehold.it/480x300">
-            </div>
-            <div class="span5 copy">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.</p>
+        <div class="row-fluid heading">
+            <div class="span11 offset1">
+                <h2>Going Somewhere?</h2>
             </div>
         </div>
-        <div  class="row-fluid section2">
+        <div  class="row-fluid section1">
             <div class="span5 offset1 copy copy-right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.</p>
+                <p>How you planning to get there?</p>
+		<p>Renting cars is cool. So is buying plane tickets.</p>
+		<p><strong>If you're a billionaire.</strong></p>
+                <p>For the rest of us, there's CoolCar.</p>
+                <p>There's millions of people heading where you need to get (probably gazillions!), and guess what?</p>
+                <p>They all got seats free in their car.</p>
+                <p>Hop in and get where you're headed on the cheap.</p>
+                <p>And maybe even make some new friends on the way.</p>
             </div>
             <div class="span5 asset">
-                <img class="img-polaroid" src="http://placehold.it/480x300">
+                <img class="mktg-img" src="./stock-photo-25669883-travel-destination-london-to-birmingham-1.png">
             </div>
         </div>
+        <div class="row-fluid heading">
+            <div class="span11 offset1">
+                <h2>But wait a minute, hop in someone's car?</h2>
+            </div>
+        </div>
+        
+        <div class="row-fluid section2">
+            <div class="span5 offset1 asset">
+                <img class="mktg-img" src="./stock-photo-12223949-tyrannosaurus-rex-1.jpg">
+            </div>
+            <div class="span5 copy">
+                <p>Isn't that that thing my mom told me not to do when the internet didn't exist and dinosaurs walked the earth on their way to buy audio tapes and fawn over the invention of sliced bread that happened earlier that day?</p>
+                <p>Guess what pal, good news for you is that the internet HAS been invented. Besides, your mom is fine with this, we asked.</p>
+                <p>Truth is, if you know AirBnb you know why this system works: reviews, references, verified identification.</p>
+		<p>We even go a step further with video check-ins at both departure and arrival.</p>
+            </div>
+        </div>
+
         <div class="row-fluid faq">
             <div class="span10 offset1">
-                <h3>FAQ</h3>
+                <h3 class="center faq">FAQ</h3>
                 <div class="accordion" id="accordion2">
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">What does FAQ stand for?</a>
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">I'm pretty sure dinoaurs didn't walk the earth at the same time as my mom. Or audio tapes.</a>
                         </div>
                         <div id="collapseOne" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                Frequently Asked Quesiton.
+                                I'm pretty sure you should shut up.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">What's a Frequently Asked Question?</a>
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Did you take that icon from IconFinder without paying?</a>
                         </div>
-                        <div id="collapseOne" class="accordion-body collapse">
+                        <div id="collapseTwo" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                A question which is commonly asked by users.
+                                See answer to previous question.
                             </div>
                         </div>
                     </div>
